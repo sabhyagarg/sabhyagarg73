@@ -293,7 +293,7 @@ function Hero() {
             <a
               href="https://www.linkedin.com/in/sabhya-garg-3b2396374"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="btn-outline"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
@@ -838,7 +838,7 @@ function Contact() {
     { icon: Mail, label: "Email", value: "27-sabhya.garg@fiib.edu.in", href: "mailto:27-sabhya.garg@fiib.edu.in" },
     { icon: Phone, label: "Phone", value: "+91 85880 33074", href: "tel:+918588033074" },
     { icon: MapPin, label: "Location", value: "New Delhi, India" },
-    { icon: Linkedin, label: "LinkedIn", value: "sabhya-garg", href: "https://www.linkedin.com/in/sabhya-garg-3b2396374" },
+    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sabhya-garg-3b2396374", href: "https://www.linkedin.com/in/sabhya-garg-3b2396374" },
   ];
   return (
     <Section
@@ -855,7 +855,7 @@ function Contact() {
             return (
               <Tag
                 key={label}
-                {...(href ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: "noreferrer" } : {})}
+                {...(href ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: "noopener noreferrer" } : {})}
                 className="card-elevated flex items-center gap-4 p-5"
               >
                 <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
