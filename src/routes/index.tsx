@@ -293,7 +293,7 @@ function Hero() {
             <a
               href="https://www.linkedin.com/in/sabhya-garg-3b2396374"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="btn-outline"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
@@ -838,7 +838,7 @@ function Contact() {
     { icon: Mail, label: "Email", value: "27-sabhya.garg@fiib.edu.in", href: "mailto:27-sabhya.garg@fiib.edu.in" },
     { icon: Phone, label: "Phone", value: "+91 85880 33074", href: "tel:+918588033074" },
     { icon: MapPin, label: "Location", value: "New Delhi, India" },
-    { icon: Linkedin, label: "LinkedIn", value: "sabhya-garg", href: "https://www.linkedin.com/in/sabhya-garg-3b2396374" },
+    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sabhya-garg-3b2396374", href: "https://www.linkedin.com/in/sabhya-garg-3b2396374" },
   ];
   return (
     <Section
