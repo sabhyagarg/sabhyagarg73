@@ -857,7 +857,7 @@ function Contact() {
   };
   const infos = [
     { icon: Mail, label: "Email", value: "27-sabhya.garg@fiib.edu.in", href: "mailto:27-sabhya.garg@fiib.edu.in" },
-    { icon: Phone, label: "Phone", value: "+91 85880 33074", href: "tel:+918588033074" },
+    { icon: Phone, label: "Phone", value: "+91 99883 96630", href: "tel:+919988396630" },
     { icon: MapPin, label: "Location", value: "New Delhi, India" },
     { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sabhya-garg-3b2396374", href: LINKEDIN_URL },
   ];
