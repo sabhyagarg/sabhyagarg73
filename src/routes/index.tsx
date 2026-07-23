@@ -855,7 +855,7 @@ function Contact() {
             return (
               <Tag
                 key={label}
-                {...(href ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: "noreferrer" } : {})}
+                {...(href ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: "noopener noreferrer" } : {})}
                 className="card-elevated flex items-center gap-4 p-5"
               >
                 <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
