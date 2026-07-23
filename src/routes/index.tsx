@@ -30,8 +30,28 @@ import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Sabhya Garg | Marketing Portfolio" },
+      {
+        name: "description",
+        content:
+          "Premium recruiter-focused portfolio for Sabhya Garg, a PGDM marketing student with experience in market research, sales strategy, and operations.",
+      },
+      { property: "og:title", content: "Sabhya Garg | Marketing Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "Explore Sabhya Garg's education, internships, projects, skills, resume, and professional contact details.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: Portfolio,
 });
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/sabhya-garg-3b2396374/";
 
 const NAV = [
   ["Home", "home"],
@@ -291,9 +311,10 @@ function Hero() {
               <Sparkles className="h-4 w-4" /> View Projects
             </a>
             <a
-              href="https://www.linkedin.com/in/sabhya-garg-3b2396374"
+              href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               className="btn-outline"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
@@ -838,7 +859,7 @@ function Contact() {
     { icon: Mail, label: "Email", value: "27-sabhya.garg@fiib.edu.in", href: "mailto:27-sabhya.garg@fiib.edu.in" },
     { icon: Phone, label: "Phone", value: "+91 85880 33074", href: "tel:+918588033074" },
     { icon: MapPin, label: "Location", value: "New Delhi, India" },
-    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sabhya-garg-3b2396374", href: "https://www.linkedin.com/in/sabhya-garg-3b2396374" },
+    { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/sabhya-garg-3b2396374", href: LINKEDIN_URL },
   ];
   return (
     <Section
@@ -855,7 +876,14 @@ function Contact() {
             return (
               <Tag
                 key={label}
-                {...(href ? { href, target: href.startsWith("http") ? "_blank" : undefined, rel: "noopener noreferrer" } : {})}
+                {...(href
+                  ? {
+                      href,
+                      target: href.startsWith("http") ? "_blank" : undefined,
+                      rel: href.startsWith("http") ? "noopener noreferrer" : undefined,
+                      referrerPolicy: href.startsWith("http") ? "no-referrer" : undefined,
+                    }
+                  : {})}
                 className="card-elevated flex items-center gap-4 p-5"
               >
                 <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
