@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Explore Sabhya Garg's education, internships, projects, skills, resume, and professional contact details.",
+          "Premium recruiter-focused portfolio for Sabhya Garg, a PGDM marketing student with experience in market research, sales strategy, and operations.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

@@ -77,21 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sabhya Garg — Marketing PGDM | Future Brand Manager" },
+      { title: "Sabhya Garg | Marketing Portfolio" },
       {
         name: "description",
         content:
-          "Portfolio of Sabhya Garg — PGDM Marketing student at FIIB, ex-ITC & IDEA intern. Brand management, market research, and consumer insights.",
+          "Premium recruiter-focused portfolio for Sabhya Garg, a PGDM marketing student with experience in market research, sales strategy, and operations.",
       },
       { name: "author", content: "Sabhya Garg" },
-      { property: "og:title", content: "Sabhya Garg — Marketing PGDM | Future Brand Manager" },
+      { property: "og:title", content: "Sabhya Garg | Marketing Portfolio" },
       {
         property: "og:description",
         content:
-          "Portfolio of Sabhya Garg — PGDM Marketing student at FIIB, ex-ITC & IDEA intern.",
+          "Premium recruiter-focused portfolio for Sabhya Garg, a PGDM marketing student with experience in market research, sales strategy, and operations.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Sabhya Garg | Marketing Portfolio" },
+      { name: "twitter:description", content: "Premium recruiter-focused portfolio for Sabhya Garg, a PGDM marketing student with experience in market research, sales strategy, and operations." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/34059284-f1e2-4423-a3b4-0f008ef29cba/id-preview-151b4826--8c97d890-1072-4ab3-9872-6828c40f0293.lovable.app-1784828850496.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/34059284-f1e2-4423-a3b4-0f008ef29cba/id-preview-151b4826--8c97d890-1072-4ab3-9872-6828c40f0293.lovable.app-1784828850496.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
