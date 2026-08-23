@@ -537,10 +537,11 @@ const EXPERIENCE = [
     place: "New Delhi",
     period: "June 2026",
     points: [
-      "Conducted accessibility audits across public infrastructure.",
-      "Collected and analysed primary research data.",
-      "Prepared recommendations aligned with accessibility standards.",
-      "Contributed to infrastructure assessment and field research.",
+      "Conducted accessibility audits across public infrastructure in Janakpuri.",
+      "Collected and analysed primary research data through field visits and observations.",
+      "Identified key accessibility barriers and user pain points.",
+      "Prepared practical recommendations based on field research and accessibility standards.",
+      "Documented findings using Excel-based tracking and analysis.",
     ],
   },
   {
