@@ -288,7 +288,7 @@ function Hero() {
             <span className="caret-blink text-accent">|</span>
           </div>
           <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            {["Marketing PGDM", "Minor in Operations", "Future Brand Manager"].map((t) => (
+            {["Marketing PGDM", "Minor in Operations", "Brand Management"].map((t) => (
               <span
                 key={t}
                 className="rounded-full border border-border bg-white/70 px-3 py-1 font-medium text-muted-foreground"
