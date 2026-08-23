@@ -600,10 +600,10 @@ function Experience() {
 
 const PROJECTS = [
   {
-    title: "Mall Immersion Project",
-    tag: "STP · Consumer Insights",
-    body: "Conducted STP analysis across Camicissima, Hamleys, and P.F. Chang's. Generated 15+ consumer insights and recommended positioning strategies through observation-based research.",
-    tools: ["STP", "Consumer Research", "Positioning"],
+    title: "Kalaé – Brand & Digital Marketing Strategy | FIIB | 2026",
+    tag: "Tools: STP, POEM, Digital Marketing Funnel",
+    body: "Developed a Gen-Z streetwear brand strategy targeting 18–35-year-old urban consumers using STP and competitor analysis. Designed a 3-stage digital marketing funnel (TOFU–MOFU–BOFU) covering awareness, consideration, and conversion. Conducted competitor and POEM analysis to identify gaps in relevance, storytelling, and brand positioning.",
+    tools: ["STP", "POEM", "Digital Marketing Funnel"],
   },
   {
     title: "AI Dashboard Concept — CSR-Radar App",
