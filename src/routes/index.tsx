@@ -311,7 +311,7 @@ function Hero() {
               <Sparkles className="h-4 w-4" /> View Projects
             </a>
             <a
-              href={LINKEDIN_URL}
+              href="https://www.linkedin.com/in/sabhya-garg-3b2396374/"
               target="_blank"
               rel="noopener noreferrer"
               referrerPolicy="no-referrer"
