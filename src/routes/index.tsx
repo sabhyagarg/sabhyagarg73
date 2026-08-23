@@ -550,9 +550,9 @@ const EXPERIENCE = [
     place: "Patiala",
     period: "June 2023 – July 2023",
     points: [
-      "Prepared 50+ accounting vouchers and worked on ledger accounts.",
-      "Prepared bank reconciliation statements.",
-      "Assisted in GST returns and Income Tax filing.",
+      "Assisted in preparing 50+ accounting vouchers and posting entries in computerized books of accounts.",
+      "Assisted in preparing ledger accounts, bank reconciliation statements, and financial statements.",
+      "Assisted with GST returns and Income Tax filing while maintaining client records.",
     ],
   },
 ];
