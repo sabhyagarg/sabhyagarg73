@@ -720,7 +720,7 @@ function Skills() {
 }
 
 function Tools() {
-  const tools = ["Power BI", "Microsoft Excel", "PowerPoint", "Word", "MS Office"];
+  const tools = ["MS Office 360", "SPSS", "HubSpot", "Power BI", "QDA Miner Lite"];
   return (
     <Section
       id="tools"
