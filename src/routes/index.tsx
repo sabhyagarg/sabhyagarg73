@@ -25,7 +25,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import sabhyaAsset from "@/assets/sabhya.png.asset.json";
-import resumeAsset from "@/assets/resume.docx.asset.json";
+import resumeAsset from "@/assets/Sabhya_Garg_CV.pdf.asset.json";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 
