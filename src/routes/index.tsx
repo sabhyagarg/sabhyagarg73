@@ -748,12 +748,12 @@ function Tools() {
 function Leadership() {
   const items = [
     {
-      title: "Team Leader",
-      body: "Led a team of five members, delegated responsibilities, and successfully completed an academic project on time.",
+      title: "Team Coordination Lead",
+      body: "Coordinated team activities, delegated responsibilities, and maintained communication to ensure timely project execution.",
     },
     {
-      title: "Event Coordinator",
-      body: "Assisted in planning and coordinating a college cultural event attended by 500+ participants.",
+      title: "Event Coordination Member",
+      body: "Supported event planning and coordination for 500+ attendees, managing participant communication and on-ground execution.",
     },
   ];
   return (
