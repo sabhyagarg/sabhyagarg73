@@ -301,6 +301,9 @@ function Hero() {
               </span>
             ))}
           </div>
+          <p className="mt-4 text-sm font-medium tracking-wide text-foreground/75">
+            PGDM in Marketing | Minor in Operations | FIIB | Batch 2025&ndash;27
+          </p>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
             PGDM student specializing in Marketing with a Minor in Operations at
             Fortune Institute of International Business (FIIB), New Delhi. I solve
