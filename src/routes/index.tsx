@@ -880,6 +880,21 @@ function Contact() {
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
         <div className="space-y-4" data-reveal>
+          <div className="card-elevated flex items-center gap-4 p-5">
+            <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full ring-2 ring-white shadow-[var(--shadow-soft)]">
+              <img
+                src={sabhyaAsset.url}
+                alt="Sabhya Garg"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="min-w-0">
+              <p className="font-display text-lg font-bold text-foreground">Sabhya Garg</p>
+              <p className="text-xs font-medium tracking-wide text-muted-foreground">
+                PGDM in Marketing | Minor in Operations | FIIB | Batch 2025&ndash;27
+              </p>
+            </div>
+          </div>
           {infos.map(({ icon: Icon, label, value, href }) => {
             const Tag = href ? "a" : "div";
             return (
