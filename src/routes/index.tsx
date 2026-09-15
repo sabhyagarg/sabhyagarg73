@@ -818,17 +818,16 @@ function Certifications() {
 }
 
 const SKILLS = [
-  "Marketing Research",
-  "Consumer Insights",
-  "Presentation Skills",
-  "Leadership",
-  "Communication",
-  "Retail Marketing",
-  "Sales Operations",
-  "Brand Management",
-  "Business Analysis",
-  "Strategic Thinking",
-  "Problem Solving",
+  { name: "Market Research", level: "Intermediate", evidence: "ITC market visits · IDEA field research" },
+  { name: "Consumer Insights", level: "Intermediate", evidence: "ITC outlet observation · Kalaé STP" },
+  { name: "Retail Marketing", level: "Intermediate", evidence: "ITC retail execution & AVF tracking" },
+  { name: "Sales Operations", level: "Working Knowledge", evidence: "ITC daily beats with sales representatives" },
+  { name: "Brand Management", level: "Working Knowledge", evidence: "Kalaé positioning & POEM analysis" },
+  { name: "Business Analysis", level: "Working Knowledge", evidence: "CSR-Radar dashboard concept" },
+  { name: "Data Organisation & Reporting", level: "Working Knowledge", evidence: "IDEA Excel-based tracking" },
+  { name: "Presentation Skills", level: "Intermediate", evidence: "FIIB project presentations" },
+  { name: "Communication", level: "Intermediate", evidence: "Field interactions with retailers & participants" },
+  { name: "Team Coordination", level: "Working Knowledge", evidence: "Team Coordination Lead · event coordination" },
 ];
 
 function Skills() {
@@ -837,21 +836,29 @@ function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Core Competencies"
-      subtitle="Blending analytical rigor with commercial thinking."
+      subtitle="Only skills used in the work shown on this page, rated conservatively."
       surface
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((s, i) => (
           <div
-            key={s}
-            className="card-elevated flex items-center gap-4 p-5"
+            key={s.name}
+            className="card-elevated flex items-start gap-4 p-5"
             data-reveal
             style={{ animationDelay: `${i * 40}ms` }}
           >
             <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary to-secondary text-white">
               <Sparkles className="h-5 w-5" />
             </div>
-            <span className="font-medium text-foreground">{s}</span>
+            <div className="min-w-0">
+              <p className="font-medium text-foreground">{s.name}</p>
+              <span className="mt-1 inline-block rounded-full border border-border bg-surface px-2.5 py-0.5 text-[11px] font-semibold text-secondary">
+                {s.level}
+              </span>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                Demonstrated in: {s.evidence}
+              </p>
+            </div>
           </div>
         ))}
       </div>
