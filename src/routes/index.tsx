@@ -59,6 +59,7 @@ const NAV = [
   ["Education", "education"],
   ["Experience", "experience"],
   ["Projects", "projects"],
+  ["Certifications", "certifications"],
   ["Skills", "skills"],
   ["Tools", "tools"],
   ["Leadership", "leadership"],
@@ -287,29 +288,56 @@ function Hero() {
             <span className="text-primary">{typed}</span>
             <span className="caret-blink text-accent">|</span>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            {[
-              "PGDM Marketing Student",
-              "Consumer Insights & Market Research",
-              "Aspiring Brand Manager, Marketing Analyst & Sales Strategist",
-            ].map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-border bg-white/70 px-3 py-1 font-medium text-muted-foreground"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-          <p className="mt-4 text-sm font-medium tracking-wide text-foreground/75">
+          <p className="mt-5 max-w-xl font-display text-[17px] font-semibold leading-relaxed text-foreground md:text-lg">
+            Brand and consumer-insight marketer who turns field research into
+            retail and brand decisions, built on a foundation in market research
+            and operations.
+          </p>
+          <p className="mt-3 text-sm font-medium tracking-wide text-foreground/75">
             PGDM in Marketing | Minor in Operations | FIIB | Batch 2025&ndash;27
           </p>
-          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
+          <div className="mt-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Targeting roles in
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2 text-xs">
+              {[
+                "Brand Management",
+                "Marketing Analytics & Consumer Insights",
+                "Sales & Retail Strategy",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-border bg-white/70 px-3 py-1 font-medium text-muted-foreground"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
             PGDM student specializing in Marketing with a Minor in Operations at
-            Fortune Institute of International Business (FIIB), New Delhi. I solve
-            business problems through market research, consumer insights, and
-            data-driven strategy — shaped by internships at ITC Limited and IDEA.
+            Fortune Institute of International Business (FIIB), New Delhi. I work
+            through market research, consumer insights and retail observation —
+            shaped by internships at ITC Limited and IDEA.
           </p>
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
+            <a
+              href="mailto:27-sabhya.garg@fiib.edu.in"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-secondary"
+            >
+              <Mail className="h-4 w-4 text-secondary" /> 27-sabhya.garg@fiib.edu.in
+            </a>
+            <a
+              href="tel:+919988396630"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-secondary"
+            >
+              <Phone className="h-4 w-4 text-secondary" /> +91 99883 96630
+            </a>
+            <span className="inline-flex items-center gap-2 font-medium">
+              <MapPin className="h-4 w-4 text-secondary" /> New Delhi, India
+            </span>
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={resumeAsset.url} download className="btn-primary">
               <Download className="h-4 w-4" /> Download Resume
@@ -607,16 +635,30 @@ function Experience() {
 
 const PROJECTS = [
   {
-    title: "Kalaé – Brand & Digital Marketing Strategy | FIIB | 2026",
-    tag: "Tools: STP, POEM, Digital Marketing Funnel",
-    body: "Developed a Gen-Z streetwear brand strategy targeting 18–35-year-old urban consumers using STP and competitor analysis. Designed a 3-stage digital marketing funnel (TOFU–MOFU–BOFU) covering awareness, consideration, and conversion. Conducted competitor and POEM analysis to identify gaps in relevance, storytelling, and brand positioning.",
+    title: "Kalaé — Brand & Digital Marketing Strategy",
+    tag: "Brand Strategy · FIIB · 2026",
+    purpose:
+      "An FIIB brand-building project: define how Kalaé, a new Gen-Z streetwear label, should position itself for 18–35-year-old urban consumers in a crowded apparel market.",
+    myRole: "Student brand strategist on the Kalaé project.",
+    contribution:
+      "Built the segmentation, targeting and positioning (STP) framework, designed a 3-stage digital marketing funnel (TOFU–MOFU–BOFU) across awareness, consideration and conversion, and ran a competitor and POEM analysis of paid, owned and earned media.",
+    outcome:
+      "Delivered a complete brand and digital strategy for one target segment, a 3-stage funnel, and a POEM-based competitor review that identified gaps in relevance, storytelling and brand positioning. No campaign was run, so no performance metrics exist for this project.",
     tools: ["STP", "POEM", "Digital Marketing Funnel"],
+    evidence: null as null | { label: string; href: string },
   },
   {
-    title: "AI Dashboard Concept — CSR-Radar App",
-    tag: "AI · Retail Analytics",
-    body: "Designed a dashboard concept to improve stock visibility, outlet tracking, DSPM monitoring, retail reporting, and decision-making for field sales teams.",
-    tools: ["Research", "Business Analysis", "AI Concepts", "Dashboard Design"],
+    title: "CSR-Radar Market Working App — AI Dashboard Concept",
+    tag: "Retail Analytics · ITC Limited Internship · 2026",
+    purpose:
+      "During the ITC Limited internship, field sales teams had no single view of stock, outlet coverage and DSPM status while working their daily beats.",
+    myRole: "Sales & Marketing Intern; author of the dashboard concept.",
+    contribution:
+      "Designed the AI dashboard concept for the CSR-Radar Market Working App, defining views for stock visibility, outlet tracking, DSPM monitoring and retail reporting, based on my own market observations.",
+    outcome:
+      "Concept grounded in 80+ retail outlets covered and 25+ outlet visits per day, proposed to support faster day-to-day decisions for field sales teams. It remains a concept and was not deployed.",
+    tools: ["Market Research", "Business Analysis", "Dashboard Design"],
+    evidence: null as null | { label: string; href: string },
   },
 ];
 
@@ -625,8 +667,8 @@ function Projects() {
     <Section
       id="projects"
       eyebrow="Projects"
-      title="Academic Projects"
-      subtitle="Insight-led problem solving with measurable outputs."
+      title="Selected Projects"
+      subtitle="Each project documented as Purpose, Process and Outcome."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {PROJECTS.map((p) => (
@@ -638,9 +680,41 @@ function Projects() {
             <h3 className="mt-4 font-display text-xl font-semibold text-foreground">
               {p.title}
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {p.body}
-            </p>
+
+            <div className="mt-5 space-y-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-secondary">
+                  Purpose
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {p.purpose}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-secondary">
+                  Process
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-foreground">My role: </span>
+                  {p.myRole}
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-foreground">
+                    My contribution:{" "}
+                  </span>
+                  {p.contribution}
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-secondary">
+                  Outcome
+                </p>
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  {p.outcome}
+                </p>
+              </div>
+            </div>
+
             <div className="mt-5 flex flex-wrap gap-2">
               {p.tools.map((t) => (
                 <span
@@ -651,51 +725,109 @@ function Projects() {
                 </span>
               ))}
             </div>
+
+            <div className="mt-5 border-t border-border pt-4">
+              {p.evidence ? (
+                <a
+                  href={p.evidence.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline text-xs"
+                >
+                  <ExternalLink className="h-4 w-4" /> {p.evidence.label}
+                </a>
+              ) : (
+                <p className="text-xs text-muted-foreground">
+                  Working file (report or deck) not yet linked — share the file
+                  link and it will appear here as a “View Project” button.
+                </p>
+              )}
+            </div>
           </article>
         ))}
-      </div>
 
-      <div className="mt-14" data-reveal>
-        <h3 className="text-center font-display text-xl font-semibold text-foreground">
-          Certifications
-        </h3>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            "Advanced Accounts",
-            "Tally with Excel",
-            "Personality Development",
-            "Public Speaking",
-            "Interview Preparation",
-            "Hitbullseye Summer Camp",
-            "Vedic Mathematics Level 1",
-            "AVAS Employability Skills",
-          ].map((c) => (
-            <div
-              key={c}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-white px-4 py-3 text-sm text-foreground transition hover:border-secondary"
-            >
-              <Award className="h-4 w-4 text-accent" />
-              {c}
-            </div>
-          ))}
-        </div>
+        <article
+          className="flex flex-col items-start justify-center rounded-2xl border border-dashed border-border bg-surface p-8"
+          data-reveal
+        >
+          <div className="grid h-12 w-12 place-items-center rounded-2xl bg-white text-secondary">
+            <Lightbulb className="h-6 w-6" />
+          </div>
+          <h3 className="mt-5 font-display text-lg font-semibold text-foreground">
+            Space reserved for your next project
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            This slot is structured and ready for a third genuine project. Share
+            the purpose, your role and contribution, the outcome and any working
+            file, and it will be added in the same format.
+          </p>
+        </article>
       </div>
     </Section>
   );
 }
 
+const CERTIFICATIONS = [
+  "Advanced Accounts",
+  "Tally with Excel",
+  "Personality Development",
+  "Public Speaking",
+  "Interview Preparation",
+  "Hitbullseye Summer Camp",
+  "Vedic Mathematics Level 1",
+  "AVAS Employability Skills",
+].map((name) => ({ name, href: null as string | null }));
+
+function Certifications() {
+  return (
+    <Section
+      id="certifications"
+      eyebrow="Certifications"
+      title="Certifications & Training"
+      subtitle="Verification links are shown wherever the issuer provides one."
+    >
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {CERTIFICATIONS.map((c) => (
+          <div
+            key={c.name}
+            className="flex items-start gap-3 rounded-2xl border border-border bg-white px-4 py-3 text-sm text-foreground transition hover:border-secondary"
+            data-reveal
+          >
+            <Award className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+            <div className="min-w-0">
+              <p className="font-medium">{c.name}</p>
+              {c.href && (
+                <a
+                  href={c.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline"
+                >
+                  View Certificate <ExternalLink className="h-3 w-3" />
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="mt-6 text-center text-xs text-muted-foreground">
+        Certificates without a verification link can be verified on request.
+      </p>
+    </Section>
+  );
+}
+
 const SKILLS = [
-  "Marketing Research",
-  "Consumer Insights",
-  "Presentation Skills",
-  "Leadership",
-  "Communication",
-  "Retail Marketing",
-  "Sales Operations",
-  "Brand Management",
-  "Business Analysis",
-  "Strategic Thinking",
-  "Problem Solving",
+  { name: "Market Research", level: "Intermediate", evidence: "ITC market visits · IDEA field research" },
+  { name: "Consumer Insights", level: "Intermediate", evidence: "ITC outlet observation · Kalaé STP" },
+  { name: "Retail Marketing", level: "Intermediate", evidence: "ITC retail execution & AVF tracking" },
+  { name: "Sales Operations", level: "Working Knowledge", evidence: "ITC daily beats with sales representatives" },
+  { name: "Brand Management", level: "Working Knowledge", evidence: "Kalaé positioning & POEM analysis" },
+  { name: "Business Analysis", level: "Working Knowledge", evidence: "CSR-Radar dashboard concept" },
+  { name: "Data Organisation & Reporting", level: "Working Knowledge", evidence: "IDEA Excel-based tracking" },
+  { name: "Presentation Skills", level: "Intermediate", evidence: "FIIB project presentations" },
+  { name: "Communication", level: "Intermediate", evidence: "Field interactions with retailers & participants" },
+  { name: "Team Coordination", level: "Working Knowledge", evidence: "Team Coordination Lead · event coordination" },
 ];
 
 function Skills() {
@@ -704,21 +836,29 @@ function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Core Competencies"
-      subtitle="Blending analytical rigor with commercial thinking."
+      subtitle="Only skills used in the work shown on this page, rated conservatively."
       surface
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((s, i) => (
           <div
-            key={s}
-            className="card-elevated flex items-center gap-4 p-5"
+            key={s.name}
+            className="card-elevated flex items-start gap-4 p-5"
             data-reveal
             style={{ animationDelay: `${i * 40}ms` }}
           >
             <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-primary to-secondary text-white">
               <Sparkles className="h-5 w-5" />
             </div>
-            <span className="font-medium text-foreground">{s}</span>
+            <div className="min-w-0">
+              <p className="font-medium text-foreground">{s.name}</p>
+              <span className="mt-1 inline-block rounded-full border border-border bg-surface px-2.5 py-0.5 text-[11px] font-semibold text-secondary">
+                {s.level}
+              </span>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                Demonstrated in: {s.evidence}
+              </p>
+            </div>
           </div>
         ))}
       </div>
@@ -733,6 +873,7 @@ function Tools() {
       id="tools"
       eyebrow="Tools"
       title="Tools I Work With"
+      subtitle="Software and platforms I have actually used, kept separate from my skills."
     >
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {tools.map((t) => (
@@ -795,9 +936,8 @@ function Leadership() {
             [80, "+", "Retail Outlets Covered"],
             [25, "+", "Daily Retail Visits"],
             [50, "+", "Accounting Vouchers"],
-            [15, "+", "Consumer Insights"],
             [3, "", "Professional Internships"],
-            [5, "+", "Certifications"],
+            [8, "", "Certifications & Trainings"],
           ].map(([n, s, label]) => (
             <div
               key={label as string}
@@ -1030,6 +1170,7 @@ function Portfolio() {
         <Education />
         <Experience />
         <Projects />
+        <Certifications />
         <Skills />
         <Tools />
         <Leadership />
