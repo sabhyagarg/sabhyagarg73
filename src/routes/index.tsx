@@ -287,29 +287,56 @@ function Hero() {
             <span className="text-primary">{typed}</span>
             <span className="caret-blink text-accent">|</span>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            {[
-              "PGDM Marketing Student",
-              "Consumer Insights & Market Research",
-              "Aspiring Brand Manager, Marketing Analyst & Sales Strategist",
-            ].map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-border bg-white/70 px-3 py-1 font-medium text-muted-foreground"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-          <p className="mt-4 text-sm font-medium tracking-wide text-foreground/75">
+          <p className="mt-5 max-w-xl font-display text-[17px] font-semibold leading-relaxed text-foreground md:text-lg">
+            Brand and consumer-insight marketer who turns field research into
+            retail and brand decisions, built on a foundation in market research
+            and operations.
+          </p>
+          <p className="mt-3 text-sm font-medium tracking-wide text-foreground/75">
             PGDM in Marketing | Minor in Operations | FIIB | Batch 2025&ndash;27
           </p>
-          <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
+          <div className="mt-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Targeting roles in
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2 text-xs">
+              {[
+                "Brand Management",
+                "Marketing Analytics & Consumer Insights",
+                "Sales & Retail Strategy",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-border bg-white/70 px-3 py-1 font-medium text-muted-foreground"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
             PGDM student specializing in Marketing with a Minor in Operations at
-            Fortune Institute of International Business (FIIB), New Delhi. I solve
-            business problems through market research, consumer insights, and
-            data-driven strategy — shaped by internships at ITC Limited and IDEA.
+            Fortune Institute of International Business (FIIB), New Delhi. I work
+            through market research, consumer insights and retail observation —
+            shaped by internships at ITC Limited and IDEA.
           </p>
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
+            <a
+              href="mailto:27-sabhya.garg@fiib.edu.in"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-secondary"
+            >
+              <Mail className="h-4 w-4 text-secondary" /> 27-sabhya.garg@fiib.edu.in
+            </a>
+            <a
+              href="tel:+919988396630"
+              className="inline-flex items-center gap-2 font-medium transition hover:text-secondary"
+            >
+              <Phone className="h-4 w-4 text-secondary" /> +91 99883 96630
+            </a>
+            <span className="inline-flex items-center gap-2 font-medium">
+              <MapPin className="h-4 w-4 text-secondary" /> New Delhi, India
+            </span>
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={resumeAsset.url} download className="btn-primary">
               <Download className="h-4 w-4" /> Download Resume
