@@ -873,6 +873,7 @@ function Tools() {
       id="tools"
       eyebrow="Tools"
       title="Tools I Work With"
+      subtitle="Software and platforms I have actually used, kept separate from my skills."
     >
       <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {tools.map((t) => (
