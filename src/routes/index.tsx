@@ -935,9 +935,8 @@ function Leadership() {
             [80, "+", "Retail Outlets Covered"],
             [25, "+", "Daily Retail Visits"],
             [50, "+", "Accounting Vouchers"],
-            [15, "+", "Consumer Insights"],
             [3, "", "Professional Internships"],
-            [5, "+", "Certifications"],
+            [8, "", "Certifications & Trainings"],
           ].map(([n, s, label]) => (
             <div
               key={label as string}
