@@ -1170,6 +1170,7 @@ function Portfolio() {
         <Education />
         <Experience />
         <Projects />
+        <Certifications />
         <Skills />
         <Tools />
         <Leadership />
