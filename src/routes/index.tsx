@@ -59,6 +59,7 @@ const NAV = [
   ["Education", "education"],
   ["Experience", "experience"],
   ["Projects", "projects"],
+  ["Certifications", "certifications"],
   ["Skills", "skills"],
   ["Tools", "tools"],
   ["Leadership", "leadership"],
