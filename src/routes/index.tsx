@@ -725,7 +725,22 @@ function Projects() {
               </div>
             </div>
 
+            {p.video ? (
+              <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface">
+                <video
+                  src={p.video}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="h-auto w-full"
+                >
+                  Your browser does not support embedded video.
+                </video>
+              </div>
+            ) : null}
+
             <div className="mt-5 flex flex-wrap gap-2">
+
               {p.tools.map((t) => (
                 <span
                   key={t}
