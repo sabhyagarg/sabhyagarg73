@@ -316,7 +316,7 @@ function Hero() {
             </div>
           </div>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
-            PGDM student specializing in Marketing with a Minor in Operations at
+            PGDM student specialising in Marketing with a Minor in Operations at
             Fortune Institute of International Business (FIIB), New Delhi. I work
             through market research, consumer insights and retail observation —
             shaped by internships at ITC Limited and IDEA.
@@ -353,6 +353,9 @@ function Hero() {
               className="btn-outline"
             >
               <Linkedin className="h-4 w-4" /> LinkedIn
+            </a>
+            <a href="#certifications" className="btn-outline">
+              <Award className="h-4 w-4" /> Certifications
             </a>
             <a href="#contact" className="btn-outline">
               <Mail className="h-4 w-4" /> Contact Me
