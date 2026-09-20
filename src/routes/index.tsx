@@ -412,14 +412,14 @@ function About() {
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <div className="card-elevated p-8 md:p-10" data-reveal>
           <p className="text-[15px] leading-relaxed text-muted-foreground">
-            “I am a PGDM Marketing student with a strong interest in brand
+            I am a PGDM Marketing student with a strong interest in brand
             management, consumer behaviour, and market research. I enjoy
             understanding customer needs, analysing markets, and turning
             insights into practical marketing strategies. During my internship
             at <span className="font-semibold text-primary">ITC Limited</span>,
             I worked closely with field sales teams, analysed retail operations
             across 80+ outlets, and identified opportunities to improve market
-            execution.”
+            execution.
           </p>
           <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
             I also contributed to accessibility research through my internship
@@ -585,7 +585,7 @@ const EXPERIENCE = [
     place: "Patiala",
     period: "June 2023 – July 2023",
     points: [
-      "Assisted in preparing 50+ accounting vouchers and posting entries in computerized books of accounts.",
+      "Assisted in preparing 50+ accounting vouchers and posting entries in computerised books of accounts.",
       "Assisted in preparing ledger accounts, bank reconciliation statements, and financial statements.",
       "Assisted with GST returns and Income Tax filing while maintaining client records.",
     ],
