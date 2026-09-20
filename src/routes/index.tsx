@@ -639,11 +639,12 @@ const PROJECTS = [
     tag: "Brand Strategy · FIIB · 2026",
     purpose:
       "An FIIB brand-building project: define how Kalaé, a new Gen-Z streetwear label, should position itself for 18–35-year-old urban consumers in a crowded apparel market.",
-    myRole: "Student brand strategist on the Kalaé project.",
+    myRole:
+      "Team project at FIIB; I worked as a brand strategy team member.",
     contribution:
-      "Built the segmentation, targeting and positioning (STP) framework, designed a 3-stage digital marketing funnel (TOFU–MOFU–BOFU) across awareness, consideration and conversion, and ran a competitor and POEM analysis of paid, owned and earned media.",
+      "Contributed to the segmentation, targeting and positioning (STP) framework, the 3-stage digital marketing funnel (TOFU–MOFU–BOFU) across awareness, consideration and conversion, and the competitor and POEM analysis of paid, owned and earned media.",
     outcome:
-      "Delivered a complete brand and digital strategy for one target segment, a 3-stage funnel, and a POEM-based competitor review that identified gaps in relevance, storytelling and brand positioning. No campaign was run, so no performance metrics exist for this project.",
+      "Team outcome: a complete brand and digital strategy for one target segment, a 3-stage funnel, and a POEM-based competitor review that identified gaps in relevance, storytelling and brand positioning. No campaign was run, so no performance metrics exist for this project.",
     tools: ["STP", "POEM", "Digital Marketing Funnel"],
     evidence: null as null | { label: string; href: string },
   },
