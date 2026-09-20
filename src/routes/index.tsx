@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import sabhyaAsset from "@/assets/sabhya.png.asset.json";
 import resumeAsset from "@/assets/Sabhya_Garg_CV-2.pdf.asset.json";
+import csrRadarDemo from "@/assets/CSR-Radar-Demo.mp4.asset.json";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -649,6 +650,7 @@ const PROJECTS = [
     outcome:
       "Team outcome: a complete brand and digital strategy for one target segment, a 3-stage funnel, and a POEM-based competitor review that identified gaps in relevance, storytelling and brand positioning. No campaign was run, so no performance metrics exist for this project.",
     tools: ["STP", "POEM", "Digital Marketing Funnel"],
+    video: null as string | null,
     evidence: null as null | { label: string; href: string },
   },
   {
@@ -662,7 +664,11 @@ const PROJECTS = [
     outcome:
       "Concept grounded in 80+ retail outlets covered and 25+ outlet visits per day, proposed to support faster day-to-day decisions for field sales teams. It remains a concept and was not deployed.",
     tools: ["Market Research", "Business Analysis", "Dashboard Design"],
-    evidence: null as null | { label: string; href: string },
+    video: csrRadarDemo.url,
+    evidence: {
+      label: "View Demo Video",
+      href: csrRadarDemo.url,
+    } as null | { label: string; href: string },
   },
 ];
 
@@ -719,7 +725,22 @@ function Projects() {
               </div>
             </div>
 
+            {p.video ? (
+              <div className="mt-5 overflow-hidden rounded-xl border border-border bg-surface">
+                <video
+                  src={p.video}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  className="h-auto w-full"
+                >
+                  Your browser does not support embedded video.
+                </video>
+              </div>
+            ) : null}
+
             <div className="mt-5 flex flex-wrap gap-2">
+
               {p.tools.map((t) => (
                 <span
                   key={t}
