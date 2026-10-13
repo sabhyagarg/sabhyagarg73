@@ -763,8 +763,8 @@ function Projects() {
                 </a>
               ) : (
                 <p className="text-xs text-muted-foreground">
-                  Working file (report or deck) not yet linked — share the file
-                  link and it will appear here as a “View Project” button.
+                  Project file link: [Add a verified report, presentation, or
+                  working-file URL when available.]
                 </p>
               )}
             </div>
