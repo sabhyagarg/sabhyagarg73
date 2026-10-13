@@ -763,8 +763,8 @@ function Projects() {
                 </a>
               ) : (
                 <p className="text-xs text-muted-foreground">
-                  Working file (report or deck) not yet linked — share the file
-                  link and it will appear here as a “View Project” button.
+                  Project file link: [Add a verified report, presentation, or
+                  working-file URL when available.]
                 </p>
               )}
             </div>
@@ -961,8 +961,7 @@ function Leadership() {
             [80, "+", "Retail Outlets Covered"],
             [25, "+", "Daily Retail Visits"],
             [50, "+", "Accounting Vouchers"],
-            [3, "", "Professional Internships"],
-            [8, "", "Certifications & Trainings"],
+            [3, "", "Internship Experiences"],
           ].map(([n, s, label]) => (
             <div
               key={label as string}
