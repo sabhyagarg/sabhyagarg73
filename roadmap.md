@@ -1,0 +1,2 @@
+- [x] Update Achievements at a Glance with verified counts and remove the certifications counter.
+- [ ] Restructure only Academic Projects into Purpose, Process, and Outcome, with genuine evidence buttons or editable placeholders where information is missing.
