@@ -651,7 +651,10 @@ const PROJECTS = [
       "Team outcome: a complete brand and digital strategy for one target segment, a 3-stage funnel, and a POEM-based competitor review that identified gaps in relevance, storytelling and brand positioning. No campaign was run, so no performance metrics exist for this project.",
     tools: ["STP", "POEM", "Digital Marketing Funnel"],
     video: null as string | null,
-    evidence: null as null | { label: string; href: string },
+    evidence: {
+      label: "View Project Report",
+      href: "https://github.com/sabhyagarg/sabhyagarg73/blob/main/Team%2013_Kala%C3%A9-Phase%203%20%281%29-.pdf",
+    } as null | { label: string; href: string },
   },
   {
     title: "CSR-Radar Market Working App — AI Dashboard Concept",
