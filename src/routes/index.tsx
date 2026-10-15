@@ -393,15 +393,10 @@ function Hero() {
 
 const INTERESTS = [
   "Brand Management",
+  "Digital Marketing",
   "Market Research",
   "Consumer Behaviour",
   "Sales Strategy",
-  "Retail Marketing",
-  "Business Analytics",
-  "Operations Management",
-  "Customer Experience",
-  "Business Development",
-  "Digital Marketing",
 ];
 
 function About() {
