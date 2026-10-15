@@ -791,13 +791,9 @@ function Projects() {
 }
 
 const CERTIFICATIONS = [
-  "Advanced Accounts",
-  "Tally with Excel",
-  "Personality Development",
-  "Public Speaking",
+  "Advanced Accounts & Tally with Excel",
   "Interview Preparation",
   "Hitbullseye Summer Camp",
-  "Vedic Mathematics Level 1",
   "AVAS Employability Skills",
 ].map((name) => ({ name, href: null as string | null }));
 
