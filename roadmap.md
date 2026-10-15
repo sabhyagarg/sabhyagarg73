@@ -1,2 +1,3 @@
 - [x] Update Achievements at a Glance with verified counts and remove the certifications counter.
 - [x] Keep each existing Academic Project organised as Purpose, Process, and Outcome, with the available genuine demo link and an explicit editable placeholder for the missing file link.
+- [x] Replace the My Interests tags with exactly the five requested interests, in the requested order.
