@@ -2,3 +2,4 @@
 - [x] Keep each existing Academic Project organised as Purpose, Process, and Outcome, with the available genuine demo link and an explicit editable placeholder for the missing file link.
 - [x] Replace the My Interests tags with exactly the five requested interests, in the requested order.
 - [x] Update Certifications & Training to four cards: combine Advanced Accounts and Tally with Excel, remove the three requested certificates, and retain the other three.
+- [x] Link each certificate card to its supplied PDF in a new tab and remove the verification note.
