@@ -791,11 +791,23 @@ function Projects() {
 }
 
 const CERTIFICATIONS = [
-  "Advanced Accounts & Tally with Excel",
-  "Interview Preparation",
-  "Hitbullseye Summer Camp",
-  "AVAS Employability Skills",
-].map((name) => ({ name, href: null as string | null }));
+  {
+    name: "Advanced Accounts & Tally with Excel",
+    href: "https://github.com/sabhyagarg/sabhyagarg73/blob/main/Advance%20Accounts%20%26%20Tally%20Certificate.pdf",
+  },
+  {
+    name: "Interview Preparation",
+    href: "https://github.com/sabhyagarg/sabhyagarg73/blob/main/certificate%20interview%20%20.%20pdf",
+  },
+  {
+    name: "Hitbullseye Summer Camp",
+    href: "https://github.com/sabhyagarg/sabhyagarg73/blob/main/Summer%20Camp%20Certificate.pdf",
+  },
+  {
+    name: "AVAS Employability Skills",
+    href: "https://github.com/sabhyagarg/sabhyagarg73/blob/main/Avas%20certificate%20.pdf",
+  },
+];
 
 function Certifications() {
   return (
@@ -807,31 +819,21 @@ function Certifications() {
     >
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {CERTIFICATIONS.map((c) => (
-          <div
+          <a
             key={c.name}
+            href={c.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-start gap-3 rounded-2xl border border-border bg-white px-4 py-3 text-sm text-foreground transition hover:border-secondary"
             data-reveal
           >
             <Award className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
             <div className="min-w-0">
               <p className="font-medium">{c.name}</p>
-              {c.href && (
-                <a
-                  href={c.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-secondary hover:underline"
-                >
-                  View Certificate <ExternalLink className="h-3 w-3" />
-                </a>
-              )}
             </div>
-          </div>
+          </a>
         ))}
       </div>
-      <p className="mt-6 text-center text-xs text-muted-foreground">
-        Certificates without a verification link can be verified on request.
-      </p>
     </Section>
   );
 }
